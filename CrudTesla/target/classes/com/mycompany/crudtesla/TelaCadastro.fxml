@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.crudtesla.TelaCadastroController">
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1280.0" nodeOrientation="INHERIT">
+               <image>
+                  <Image url="@../../../images/backgroundgradient.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <GridPane layoutX="26.0" layoutY="208.0" prefHeight="304.0" prefWidth="217.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.0" minWidth="10.0" prefWidth="218.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="24.0" prefWidth="152.0" text="Nome Completo:" textAlignment="CENTER">
+                     <font>
+                        <Font name="Roboto" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="24.0" prefWidth="60.0" text="E-mail:" textAlignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Roboto" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nome de Usuário:" textAlignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Roboto" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="24.0" prefWidth="61.0" text="Senha:" textAlignment="CENTER" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Roboto" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="Data de Nascimento:" textAlignment="CENTER" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Roboto" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="Número de Telefone:" textAlignment="CENTER" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Roboto" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="Endereço:" textAlignment="CENTER" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Roboto" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="Informações do Cartão:" textAlignment="CENTER" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Roboto" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane layoutX="243.0" layoutY="208.0" prefHeight="304.0" prefWidth="393.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="550.0" minWidth="10.0" prefWidth="377.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="fieldNomeCompleto" prefHeight="0.0" prefWidth="533.0" promptText="Insira seu nome completo" />
+                  <TextField fx:id="fieldEmail" prefHeight="0.0" prefWidth="377.0" promptText="Insira seu e-mail" GridPane.rowIndex="1" />
+                  <TextField fx:id="fieldNomeUsuario" prefHeight="25.0" prefWidth="252.0" promptText="Insira seu nome de usuário" GridPane.rowIndex="2" />
+                  <PasswordField fx:id="fieldSenha" prefHeight="25.0" prefWidth="252.0" promptText="Insira sua senha" GridPane.rowIndex="3" />
+                  <TextField fx:id="fieldNumeroTelefone" prefHeight="25.0" prefWidth="252.0" promptText="Código do país e número" GridPane.rowIndex="5" />
+                  <TextField fx:id="fieldEndereco" prefHeight="25.0" prefWidth="252.0" promptText="Rua, Bairro, Numero, Cidade, Estado, País" GridPane.rowIndex="6" />
+                  <TextField fx:id="fieldInformacoesCartao" prefHeight="25.0" prefWidth="252.0" promptText="Número do Cartão, Validade, Código de Segurança" GridPane.rowIndex="7" />
+                  <TextField fx:id="fieldDataNascimento" prefHeight="25.0" prefWidth="252.0" promptText="DD/MM/AAAA" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+            <Button fx:id="btn_registrar" alignment="CENTER" layoutX="560.0" layoutY="518.0" mnemonicParsing="false" onAction="#btn_registrarAcao" text="REGISTRAR" />
+            <Button fx:id="btn_voltar" alignment="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_voltarAcao" text="VOLTAR" />
+            <Label alignment="CENTER" layoutX="408.0" layoutY="39.0" prefHeight="90.0" prefWidth="464.0" text="TELA DE REGISTRO" textAlignment="CENTER">
+               <font>
+                  <Font name="Roboto" size="48.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="304.0" fitWidth="608.0" layoutX="672.0" layoutY="208.0">
+               <image>
+                  <Image url="@../../../images/Starlink_Logo.svg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
